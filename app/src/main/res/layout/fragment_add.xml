@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/items_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/items_namehint"
+        android:inputType="textCapSentences|textNoSuggestions"
+        android:background="@drawable/items_border"
+        android:padding="16dp"
+        android:layout_margin="8dp"/>
+
+    <Spinner
+        android:id="@+id/planets_radio"
+        android:layout_width="wrap_content"
+        android:minWidth="186dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/items_border"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="24dp"
+        android:paddingBottom="24dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/capture_image"
+            android:text="Capture"
+            android:clickable="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/camera_image"
+            android:layout_width="100dp"
+            android:layout_height="167dp"
+            android:layout_weight="0.43"
+            android:background="@drawable/image_border"
+            android:padding="7dp"
+            android:scaleType="centerInside"
+            android:adjustViewBounds="false" />
+
+    </LinearLayout>
+
+
+    <Spinner
+        android:id="@+id/planets_spinner"
+        android:layout_width="wrap_content"
+        android:minWidth="186dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/items_border"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:gravity="center"/>
+
+    <EditText
+        android:id="@+id/details_field"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/details"
+        android:inputType="textCapSentences|textNoSuggestions|textImeMultiLine"
+        android:layout_weight="0.40"
+        android:background="@drawable/items_border"
+        android:padding="16dp"
+        android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you want to save location on map?"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="8dp" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/location_radio">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"/>
+        </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_Button"
+        android:text="Add item"
+        android:clickable="true"
+        android:padding="16dp"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <EditText
+        android:id="@+id/search_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_name_string"
+        android:inputType="textCapSentences|textNoSuggestions"
+        android:background="@drawable/items_border"
+        android:padding="16dp"
+        android:layout_margin="8dp"/>
+
+    <Spinner
+        android:id="@+id/search_radio"
+        android:layout_width="wrap_content"
+        android:minWidth="207dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/items_border"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_margin="8dp"/>
+
+    <Spinner
+        android:id="@+id/search_spinner"
+        android:layout_width="wrap_content"
+        android:minWidth="207dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/items_border"
+        android:padding="16dp"
+        android:gravity="center"
+        android:layout_margin="8dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/done_button"
+        android:clickable="true"
+        android:text="done!"
+        android:layout_margin="8dp"/>
+
+</LinearLayout>

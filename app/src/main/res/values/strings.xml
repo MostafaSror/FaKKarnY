@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FaKKarnY</string>
+
+    <string name="title_activity_add">Add an item</string>
+    <string name="title_activity_show">show items</string>
+    <string name="title_activity_search">search an item</string>
+    <string name="title_activity_details">Details</string>
+
+    <string name="items_namehint">Type the item name</string>
+    <string name="cat_type">type</string>
+    <string name="details">optional details</string>
+    <string name="seacrh_button">search</string>
+    <string name="search_name_string">type name</string>
+    <string name="show_button">show all</string>
+
+    <string name="action_addcat">add a category</string>
+    <string name="action_addtype">add a type</string>
+
+</resources>
